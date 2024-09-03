@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <groups>
+		  <define name="Regression TC">
+			  <include name="function Test case"></include>
+			  <include name="integration Test case"></include>
+			  <include name="Smoke Test case"></include>
+		  </define>
+		  <run>
+			  <include name="integration Test case"></include>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="testNGAnatation.Flag7"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
